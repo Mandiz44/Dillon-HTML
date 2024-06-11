@@ -5,6 +5,7 @@ html{
     padding-right:25%;
     line-height: 1.2;
     max-width: 750px;
+    font-weight: 100;
 }
 h2{
     color: white;
@@ -23,11 +24,13 @@ hr{
 h3 a{
     color: #42e0f5;
     text-decoration: none;
+
 }
 p{
     color: #d9dbda;
     font-size: 18px;
     font-weight: lighter;
+    margin: 8px;
 }
 .element1 {
     padding-left: 50%;
@@ -40,11 +43,12 @@ p{
     font-style: italic;
     color: grey;
 }
-img{
+#image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+    rotate: none;
 
 }
 a,p#allposts{
@@ -53,7 +57,7 @@ a,p#allposts{
     text-align: center;
 }
 
-nav ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -76,4 +80,49 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.social-container ul li{
+    
+    display: inline;
+}
+.social-container {
+    display: flex;
+    justify-content: flex-start;
+}
+.social-container img{
+   width:25px;
+   margin: 0 3px;
+}
+.footer-container img{
+   width:25px;
+   margin: 0 3px;
+   display: inline;
+}
+.footer-container ul li{
+    
+    display: inline;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.calendar {
+    width: 19px;
+    margin-right:15px;
+}
+li a:hover{
+    color: #42e0f5;
+
+}
+#allposts a:hover{
+    color: #42e0f5;
+}
+h3 a:hover{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+
+}
+img:not(#image,.calendar):hover {
+  transform: rotate(16deg);
 }
